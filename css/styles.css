@@ -1,1 +1,84 @@
 /*# sourceMappingURL=styles.css.map */
+
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    top: 24px;
+    right: 0px;
+    /* this absolute works according to whether the parent is relative and it will adjust 
+    according to that otherwise it will adjust according to the first parent in the tree
+    or any other element above in the tree */
+    position: absolute;
+}
+
+.nav-bar {
+    margin-bottom: 20px;
+    display: flex;
+    /* position: fixed; */
+    /* background-color: aqua; */
+
+}
+
+
+ul a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ul,
+li {
+    display: inline;
+}
+
+/* these ones above are well */
+
+.logo {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.finance-text{
+    /* the relative positioning works like the static(default) positioning but for it 
+    it allows to fine tune the positions by the smallest details like how i positioned the 
+    text next to the image  */
+    /* relative positioning is rarely used for the top, left etc positionnig */
+    position: relative;
+    top: 10px;
+    left: 2px;
+    font-weight: bold;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    /* stick it at the top */
+    left: 0;
+    /* stick it at the left */
+    width: 100%;
+    /* make it full width */
+    z-index: 100;
+    /* ensure it's on top of other elements */
+    /* You can also add some background color for better visibility */
+    background-color: rgb(255, 255, 255);
+    /* change this to suit your design */
+}
+
+
+/* HERO SECTION */
+
+
+.hero-section{
+    margin-top: 68px;
+    position: relative;
+}
+
+
