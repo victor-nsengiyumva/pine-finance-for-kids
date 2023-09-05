@@ -46,7 +46,7 @@ li {
     padding-left: 25px;
 }
 
-.finance-text{
+.finance-text {
     /* the relative positioning works like the static(default) positioning but for it 
     it allows to fine tune the positions by the smallest details like how i positioned the 
     text next to the image  */
@@ -76,9 +76,83 @@ li {
 /* HERO SECTION */
 
 
-.hero-section{
+.hero-section {
+    display: flex;
     margin-top: 68px;
-    position: relative;
+    /* position: relative; */
+    background-size: cover;
+    height: 590px;
+    width: 100%;
+    background-image: url('../assets/hero-image-full2.jpg');
+
 }
+
+@media (max-width: 1200px) {
+    .hero-section {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../assets/hero-image-full.png');
+    }
+    
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+.hero-section-container {
+    width: 100%;
+}
+
+.hero-message {
+    width: 35%;
+    text-align: center;
+    margin-left: 100px;
+    /* so here the div was centered with margin top and bottom as auto 
+    because the parent, hero-section is a flex */
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 65%;
+    /* padding-top: 120px; */
+}
+
+.hero-message h1 {
+    font-size: 2.3rem;
+    color: #52B848;
+}
+
+.SAVING{
+    color: black;
+}
+
+.hero-message p {
+    font-size: 1.3rem;
+}
+
+.download-icons{
+    /* making the margin left and right auto will center the div 
+    since equal margin is given to the left and right basing on the size
+    of the parent container however this is only possible with the horizontal
+    side and wont work to center vertically*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    width: 60%;
+}
+
+.download-icons img{
+    /* this flex 1 works as in flutter and divides the entire space equally btn the 2 images */
+    flex: 1;
+    width: 80px;
+    height: 80px;
+}
+
+
 
 
