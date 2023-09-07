@@ -79,22 +79,18 @@ li {
 .hero-section {
     display: flex;
     margin-top: 68px;
-    /* position: relative; */
+    /* image cover is the most suitable format since when you reduce the window size the image doesnt reduce
+    unlike for "contain" where the image will reduce and repeat to fill the remaining gap.
+    But as it starts to crop in cover , thats where you use css to change the layout and rerender the full image 
+    an realign everyhting like it was done for this site [https://www.gohenry.com/uk/back-to-school-b/?promotion=BP1MG2310C]*/
     background-size: cover;
-    height: 590px;
+    min-height: 590px;
     width: 100%;
     background-image: url('../assets/hero-image-full2.jpg');
 
 }
 
-@media (max-width: 1200px) {
-    .hero-section {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url('../assets/hero-image-full.png');
-    }
-    
-}
+
 
 
 
