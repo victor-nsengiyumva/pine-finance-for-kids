@@ -273,7 +273,7 @@ body {
 /* MORE FEATURES */
 
 .more-features-section {
-    margin-top: 35 px;
+    margin-top: 35px;
 }
 
 .more-features-text {
@@ -289,69 +289,84 @@ body {
     display: flex;
     height: 620px;
     width: 85%;
-    /* background-color: aqua; ffffffffffffffffffff*/
+    background-color: aqua;
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
-.feature-grid{
+.feature-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 85%;
     margin: 0px auto;
-    /* background-color: #52B848; ffffffffffffffffffffffffffff*/
-  
+    background-color: #52B848;
+    position: relative;
 }
 
-.feature-column1{
-    /* background-color: blue; fffffffffffffffffffffff*/
+.feature-column1 {
+    background-color: blue;
     height: 290px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: top;
     padding: 0px 80px;
 }
-.feature-column2{
+
+.feature-column2 {
     height: 290px;
-    /* background-color: blue; ffffffffffffffffffffffffff*/
+    background-color: blue;
     display: flex;
-    
+    justify-content: center;
+    align-items: top;
+    padding: 0px 80px;
+
 }
 
-.feature-column1 .feature{
+.feature-column1 .feature {
     display: flex;
     flex-direction: column;
-align-items: center;    /* position: relative; */
+    align-items: center;
     height: 270px;
     width: 250px;
     max-width: 250px;
-    /* background-color: brown; ffffffffffffffffffffffffffffffffff */    
-    margin: 0px 10px;
+    background-color: brown; 
+    margin: 0px 0px;
 }
 
-.feature1{
-    width: 240px;
-    height: 250px;
+.feature-column2 .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    width: 250px;
+    max-width: 250px;
+    background-color: brown; 
+    margin: 0px 0px;
+}
+
+.feature1 {
+    width: auto;
+    max-width: 240px;
+    height: 255px;
     background-color: #dffadb;
     margin-top: 25px;
-    position: absolute;
-    z-index: 1;
-    border-radius:15px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
-        
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    /* Adjust the values as needed */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .feature-grid img {
     height: 50px;
     width: 50px;
-    z-index: 2;
     position: absolute;
 }
 
-.feature1 .heading{
+.feature1 .heading {
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
@@ -360,7 +375,7 @@ align-items: center;    /* position: relative; */
     font-size: 19px;
 }
 
-.feature .main{
+.feature .main {
     margin-top: 25px;
     margin-left: 19px;
     margin-right: 19px;
