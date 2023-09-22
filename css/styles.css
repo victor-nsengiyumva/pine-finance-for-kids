@@ -1,4 +1,9 @@
 
+:root {
+  --dark-green:#52B848;
+  --light-green:#dffadb;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -103,7 +108,7 @@ body {
 
 .hero-message h1 {
   font-size: 2.3rem;
-  color: #52B848;
+  color: var(--dark-green);
 }
 
 .SAVING {
@@ -150,7 +155,7 @@ body {
   margin-right: auto;
   width: 85%;
   height: 300px;
-  background-color: #dffadb;
+  background-color: var(--light-green);
   border-radius: 17px;
 }
 
@@ -339,7 +344,7 @@ body {
   width: auto;
   max-width: 240px;
   height: 255px;
-  background-color: #dffadb;
+  background-color: var(--light-green);
   margin-top: 25px;
   border-radius: 15px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
