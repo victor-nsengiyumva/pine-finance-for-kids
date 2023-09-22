@@ -287,9 +287,9 @@ body {
 
 .feature-grid-layout {
     display: flex;
-    height: 620px;
+    height: 600px;
     width: 85%;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: auto;
@@ -302,12 +302,12 @@ body {
     justify-content: space-between;
     width: 85%;
     margin: 0px auto;
-    background-color: #52B848;
+    /* background-color: #52B848; */
     position: relative;
 }
 
 .feature-column1 {
-    background-color: blue;
+    /* background-color: blue; */
     height: 290px;
     display: flex;
     justify-content: center;
@@ -317,7 +317,7 @@ body {
 
 .feature-column2 {
     height: 290px;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: top;
@@ -332,7 +332,7 @@ body {
     height: 270px;
     width: 250px;
     max-width: 250px;
-    background-color: brown; 
+    /* background-color: brown;  */
     margin: 0px 0px;
 }
 
@@ -343,7 +343,7 @@ body {
     height: 270px;
     width: 250px;
     max-width: 250px;
-    background-color: brown; 
+    /* background-color: brown;  */
     margin: 0px 0px;
 }
 
