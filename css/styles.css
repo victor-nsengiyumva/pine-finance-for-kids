@@ -1,423 +1,381 @@
-/*# sourceMappingURL=styles.css.map */
-
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 nav li {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav {
-    top: 24px;
-    right: 0px;
-    /* this absolute works according to whether the parent is relative and it will adjust 
-    according to that otherwise it will adjust according to the first parent in the tree
-    or any other element above in the tree */
-    position: absolute;
+  top: 24px;
+  right: 0px;
+  /* this absolute works according to whether the parent is relative and it will adjust 
+  according to that otherwise it will adjust according to the first parent in the tree
+  or any other element above in the tree */
+  position: absolute;
 }
 
 .nav-bar {
-    margin-bottom: 20px;
-    display: flex;
-    /* position: fixed; */
-    /* background-color: aqua; */
-
+  margin-bottom: 20px;
+  display: flex;
+  /* position: fixed; */
+  /* background-color: aqua; */
 }
 
-
 ul a {
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 ul,
 li {
-    display: inline;
+  display: inline;
 }
 
 /* these ones above are well */
-
 .logo {
-    padding-top: 20px;
-    padding-left: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
 .finance-text {
-    /* the relative positioning works like the static(default) positioning but for it 
-    it allows to fine tune the positions by the smallest details like how i positioned the 
-    text next to the image  */
-    /* relative positioning is rarely used for the top, left etc positionnig */
-    position: relative;
-    top: 10px;
-    left: 2px;
-    font-weight: bold;
+  /* the relative positioning works like the static(default) positioning but for it 
+  it allows to fine tune the positions by the smallest details like how i positioned the 
+  text next to the image  */
+  /* relative positioning is rarely used for the top, left etc positionnig */
+  position: relative;
+  top: 10px;
+  left: 2px;
+  font-weight: bold;
 }
 
 .nav-container {
-    position: fixed;
-    top: 0;
-    /* stick it at the top */
-    left: 0;
-    /* stick it at the left */
-    width: 100%;
-    /* make it full width */
-    z-index: 100;
-    /* ensure it's on top of other elements */
-    /* You can also add some background color for better visibility */
-    background-color: rgb(255, 255, 255);
-    /* change this to suit your design */
+  position: fixed;
+  top: 0;
+  /* stick it at the top */
+  left: 0;
+  /* stick it at the left */
+  width: 100%;
+  /* make it full width */
+  z-index: 100;
+  /* ensure it's on top of other elements */
+  /* You can also add some background color for better visibility */
+  background-color: rgb(255, 255, 255);
+  /* change this to suit your design */
 }
-
 
 /* HERO SECTION */
-
-
 .hero-section {
-    display: flex;
-    margin-top: 68px;
-    /* image cover is the most suitable format since when you reduce the window size the image doesnt reduce
-    unlike for "contain" where the image will reduce and repeat to fill the remaining gap.
-    But as it starts to crop in cover , thats where you use css to change the layout and rerender the full image 
-    an realign everyhting like it was done for this site [https://www.gohenry.com/uk/back-to-school-b/?promotion=BP1MG2310C]*/
-    background-size: cover;
-    min-height: 590px;
-    width: 100%;
-    background-image: url('../assets/hero-image-full2.jpg');
-
+  display: flex;
+  margin-top: 68px;
+  /* image cover is the most suitable format since when you reduce the window size the image doesnt reduce
+  unlike for "contain" where the image will reduce and repeat to fill the remaining gap.
+  But as it starts to crop in cover , thats where you use css to change the layout and rerender the full image 
+  an realign everyhting like it was done for this site [https://www.gohenry.com/uk/back-to-school-b/?promotion=BP1MG2310C]*/
+  background-size: cover;
+  min-height: 590px;
+  width: 100%;
+  background-image: url("../assets/hero-image-full2.jpg");
 }
-
-
-
-
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-
 .hero-section-container {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-message {
-    width: 35%;
-    text-align: center;
-    margin-left: 100px;
-    /* so here the div was centered with margin top and bottom as auto 
-    because the parent, hero-section is a flex */
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 65%;
-    /* padding-top: 120px; */
+  width: 35%;
+  text-align: center;
+  margin-left: 100px;
+  /* so here the div was centered with margin top and bottom as auto 
+  because the parent, hero-section is a flex */
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 65%;
+  /* padding-top: 120px; */
 }
 
-
 .hero-message h1 {
-    font-size: 2.3rem;
-    color: #52B848;
+  font-size: 2.3rem;
+  color: #52B848;
 }
 
 .SAVING {
-    color: black;
+  color: black;
 }
 
 .hero-message p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .download-icons {
-    /* making the margin left and right auto will center the div 
-    since equal margin is given to the left and right basing on the size
-    of the parent container however this is only possible with the horizontal
-    side and wont work to center vertically*/
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    width: 60%;
+  /* making the margin left and right auto will center the div 
+  since equal margin is given to the left and right basing on the size
+  of the parent container however this is only possible with the horizontal
+  side and wont work to center vertically*/
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  width: 60%;
 }
 
 .download-icons img {
-    /* this flex 1 works as in flutter and divides the entire space equally btn the 2 images */
-    flex: 1;
-    width: 80px;
-    height: 80px;
+  /* this flex 1 works as in flutter and divides the entire space equally btn the 2 images */
+  flex: 1;
+  width: 80px;
+  height: 80px;
 }
 
-
-
 /* BENEFITS SECTION */
-
 .benefits-section img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .benefits-section {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: 300px;
-    background-color: #dffadb;
-    border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 300px;
+  background-color: #dffadb;
+  border-radius: 17px;
 }
 
 .title-benefits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 80px;
-    font-size: 1.9em;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+  font-size: 1.9em;
+  font-weight: 500;
 }
 
 .benefits-icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
-    font-size: 1.2rem;
-    font-weight: bold;
-
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .benefits-icons div {
-    display: flex;
-    flex-direction: column;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-icons p {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 /* FEATURED ON */
-
-
 .featured-on {
-    background-color: rgb(248, 238, 240);
-    height: 150px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: rgb(248, 238, 240);
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.feature-icons{
-    height: 60px;
-    width: 60px;
+.feature-icons {
+  height: 60px;
+  width: 60px;
 }
 
 .featured-section {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 .featured-section p {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-
 /* FIRST FEATURE */
-
 .first-feature-section {
-    margin-top: 90px;
-    display: flex;
-    /* background-color: #52B848; */
-    /* justify-content: center; */
-    align-items: center;
+  margin-top: 90px;
+  display: flex;
+  /* background-color: #52B848; */
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .phone-screen-image {
-    height: 550px;
-    margin-left: 10px;
-    width: auto;
-    /* background-color: aqua; */
-
+  height: 550px;
+  margin-left: 10px;
+  width: auto;
+  /* background-color: aqua; */
 }
 
 .first-feature {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 45%;
-    margin-left: 140px;
-    /* margin-right: auto; */
-    border-radius: 17px;
-    /* background-color: brown; */
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 45%;
+  margin-left: 140px;
+  /* margin-right: auto; */
+  border-radius: 17px;
+  /* background-color: brown; */
 }
 
 .first-feature-text {
-    width: 80%;
-    font-size: 1.4rem;
-    margin-top: 50px;
-
+  width: 80%;
+  font-size: 1.4rem;
+  margin-top: 50px;
 }
 
 .first-feature-text-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 .first-feature .download-icons2 {
-    margin-top: 40px;
-    display: flex;
-    width: 60%;
-
-
+  margin-top: 40px;
+  display: flex;
+  width: 60%;
 }
 
 .download-icons2 img {
-    width: 140px;
-    height: 100px;
-    padding: 0px;
-    margin: 0px;
-
+  width: 140px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
 }
 
-
-
 /* MORE FEATURES */
-
-
-
 .more-features-section {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .more-features-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.9em;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.9em;
+  font-weight: 500;
 }
 
 .feature-grid-layout {
-    display: flex;
-    height: 600px;
-    width: 85%;
-    /* background-color: aqua; */
-    margin-top: 100px;
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  height: 600px;
+  width: 85%;
+  /* background-color: aqua; */
+  margin-top: 100px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 85%;
-    margin: 0px auto;
-    /* background-color: #52B848; */
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0px auto;
+  /* background-color: #52B848; */
+  position: relative;
 }
 
 .feature-column1 {
-    /* background-color: blue; */
-    height: 290px;
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    padding: 0px 80px;
+  /* background-color: blue; */
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 0px 80px;
 }
 
 .feature-column2 {
-    height: 290px;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    padding: 0px 80px;
-
+  height: 290px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 0px 80px;
 }
 
 .feature-column1 .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 270px;
-    width: 250px;
-    max-width: 250px;
-    /* background-color: brown;  */
-    margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  width: 250px;
+  max-width: 250px;
+  /* background-color: brown;  */
+  margin: 0px 0px;
 }
 
 .feature-column2 .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 270px;
-    width: 250px;
-    max-width: 250px;
-    /* background-color: brown;  */
-    margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  width: 250px;
+  max-width: 250px;
+  /* background-color: brown;  */
+  margin: 0px 0px;
 }
 
 .feature1 {
-    width: auto;
-    max-width: 240px;
-    height: 255px;
-    background-color: #dffadb;
-    margin-top: 25px;
-    border-radius: 15px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
-    /* Adjust the values as needed */
-    margin-left: 10px;
-    margin-right: 10px;
+  width: auto;
+  max-width: 240px;
+  height: 255px;
+  background-color: #dffadb;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  /* Adjust the values as needed */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .feature-grid img {
-    height: 50px;
-    width: 50px;
-    position: absolute;
+  height: 50px;
+  width: 50px;
+  position: absolute;
 }
 
 .feature1 .heading {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    margin-top: 50px;
-    font-weight: bolder;
-    font-size: 19px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 19px;
 }
 
 .feature .main {
-    margin-top: 25px;
-    margin-left: 19px;
-    margin-right: 19px;
-    text-align: center;
-    font-weight: 50;
-    font-size: 19px;
-
-
+  margin-top: 25px;
+  margin-left: 19px;
+  margin-right: 19px;
+  text-align: center;
+  font-weight: 50;
+  font-size: 19px;
 }
 
-
 /* FOOTER SECTION */
-
-
 footer {
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
-    text-align: center; /* Center-align the content */
-    height: 350px;
-  }
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center-align the content */
+  height: 350px;
+}/*# sourceMappingURL=styles.css.map */
